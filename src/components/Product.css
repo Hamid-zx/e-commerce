@@ -1,0 +1,50 @@
+.product {
+    background: linear-gradient(135deg, #233647, #05adb9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product h3 {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  
+  .product p {
+    color: #f4f4f4;
+    font-size: 1.1em;
+  }
+  
+  .product button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .product button:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+  }
+  
+  /* Add animations */
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
